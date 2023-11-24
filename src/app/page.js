@@ -1,9 +1,8 @@
 import React from 'react';
-import Image from 'next/image';
 
 const Home = () => {
   return (
-    <div className="bg-gray-100 text-gray-900 font-sans">    
+    <div className="bg-gray-100 text-gray-900 font-sans h-screen">    
 
       <section id="inicio" className="py-16">
         <div className="container mx-auto text-center">
@@ -16,17 +15,15 @@ const Home = () => {
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">Stack Tecnológico</h2>
           <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-            <div className="flex flex-col items-center">
-              {/* <Image src="ruta_de_la_imagen_html.png" alt="HTML" className="h-16" /> */}
+            <div className="flex flex-col items-center">              
+              <img src="ruta_de_la_imagen_css.png" alt="HTML" className="h-16" />
               <span className="mt-2">HTML</span>
             </div>
 
-            {/* Agrega más elementos del stack con sus imágenes */}
-            {/* Ejemplo para CSS */}
-            {/* <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center">
               <img src="ruta_de_la_imagen_css.png" alt="CSS" className="h-16" />
               <span className="mt-2">CSS</span>
-            </div> */}
+            </div>
           </div>
         </div>
       </section>
