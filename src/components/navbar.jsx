@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 
 const Navbar = () => {
@@ -7,24 +8,24 @@ const Navbar = () => {
             <span className="text-xl font-bold">Mi Portafolio</span>
             <ul className="flex space-x-4">
             <li>
-                <a href="#inicio" className="hover:text-gray-300">
+                <Link href="#inicio" className="hover:text-gray-300">
                 Inicio
-                </a>
+                </Link>
             </li>
             <li>
-                <a href="#stack" className="hover:text-gray-300">
+                <Link href="#stack" className="hover:text-gray-300">
                 Stack
-                </a>
+                </Link>
             </li>
             <li>
-                <a href="#proyectos" className="hover:text-gray-300">
+                <Link href="#proyectos" className="hover:text-gray-300">
                 Proyectos
-                </a>
+                </Link>
             </li>
             <li>
-                <a href="#contacto" className="hover:text-gray-300">
+                <Link href="#contacto" className="hover:text-gray-300">
                 Contacto
-                </a>
+                </Link>
             </li>
             </ul>
         </div>
