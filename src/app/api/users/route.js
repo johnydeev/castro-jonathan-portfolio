@@ -6,7 +6,7 @@ import {connectDB} from '@/utils/connectDB'
 connectDB()
 
 export async function GET(){      
-    console.log("Obteniendo todos los Usuarios...")
+    console.log("Obteniendo todos los Contactos...")
     const user = await users.find()
     return NextResponse.json(user)
 }
@@ -17,9 +17,9 @@ export async function POST(request){
         const data = await request.json()
         console.log("data>>>",data)
         const newUser = new users(data)        
-        console.log("newEdificio>>>",newUser)
+        console.log("newContact>>>",newUser)
         const saveUser = await newUser.save()
-        console.log("Agregando nuevo usuario...")
+        console.log("Agregando nuevo contacto...")
         console.log(saveUser)
         return NextResponse.json(saveUser)        
         

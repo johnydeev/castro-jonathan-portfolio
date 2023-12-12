@@ -12,7 +12,7 @@ export async function connectDB(){
         conn.isConnected = db.connections[0].readyState
     return conn
     } catch (error) {
-        return console.log(error)        
+        return console.log(error)
     }
 }
 
