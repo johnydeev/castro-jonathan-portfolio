@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
       <nav className="bg-gray-800 text-white p-4">
         <div className="container mx-auto flex justify-between items-center">
-          <span className="text-xl font-bold">Mi Portafolio</span>
+          <span className="text-xl font-bold">Castro Jonathan</span>
           <ul className="flex space-x-4">
             <li>
               <Link href="#inicio"  className="hover:text-gray-300"
