@@ -11,9 +11,9 @@ const Body = () => {
               ¡Hola! Mi nombre es Jonathan y soy Desarrollador Full Stack
             </h1>
             <h3 className="text-lg">Bienvenido a mi portafolio profesional.</h3>
-            <article className="flex justify-around text-center items-center py-10">
+            <article className="flex justify-around text-center items-center py-6">
               <p className="w-1/3">
-                Me considero un amante de la tecnologia e innovacion y siento
+                Me considero un amante de la tecnologia e innovacion... siento
                 que tengo mucho para dar en el campo IT gracias a mi creatividad
                 y dedicacion. Espero algun dia ser ejemplo o referente en este
                 mundo tan basto de la programacion.
