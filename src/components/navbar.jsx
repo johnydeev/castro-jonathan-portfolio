@@ -3,33 +3,34 @@ import React from 'react'
 
 const Navbar = () => {
     return (
-        <nav className="bg-gray-800 text-white p-4">
+      <nav className="bg-gray-800 text-white p-4">
         <div className="container mx-auto flex justify-between items-center">
-            <span className="text-xl font-bold">Mi Portafolio</span>
-            <ul className="flex space-x-4">
+          <span className="text-xl font-bold">Mi Portafolio</span>
+          <ul className="flex space-x-4">
             <li>
-                <Link href="#inicio" className="hover:text-gray-300">
+              <Link href="#inicio"  className="hover:text-gray-300"
+              >
                 Inicio
-                </Link>
+              </Link>
             </li>
             <li>
-                <Link href="#stack" className="hover:text-gray-300">
+              <Link href="#stack" className="hover:text-gray-300">
                 Stack
-                </Link>
+              </Link>
             </li>
             <li>
-                <Link href="#proyectos" className="hover:text-gray-300">
+              <Link href="#proyectos" className="hover:text-gray-300">
                 Proyectos
-                </Link>
+              </Link>
             </li>
             <li>
-                <Link href="#contacto" className="hover:text-gray-300">
+              <Link href="#contacto" className="hover:text-gray-300">
                 Contacto
-                </Link>
+              </Link>
             </li>
-            </ul>
+          </ul>
         </div>
-        </nav>
+      </nav>
     );
 }
 
