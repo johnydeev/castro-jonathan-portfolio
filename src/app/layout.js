@@ -3,8 +3,8 @@ import './globals.css'
 import Footer from '@/components/footer'
 
 export const metadata = {
-  title: '',
-  description: 'Crud no-SQL mongoDB',}
+  title: '👨‍💻Portfolio Castro Jonathan',
+  description: 'Portfolio Castro Jonathan',}
 
 export default function RootLayout({ children }) {
   return (
@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
       <body className='min-w-min min-h-min'>
         <Navbar/>
         {children}
-        <Footer/>      
+        <Footer/>    
       </body>
     </html>
   )
