@@ -18,7 +18,7 @@ const Stack = () => {
             </div>
 
             <div className="flex flex-col items-center">
-              <Image width={100} height={100} src="/css.svg" alt="css" />
+              <Image width={100} height={100} src="/css.svg" alt="CSS" />
               <span className="mt-2">CSS3</span>
             </div>
             <div className="flex flex-col items-center">
@@ -108,7 +108,7 @@ const Stack = () => {
                 width={130}
                 height={50}
                 src="/next.svg"
-                alt="next"
+                alt="nextjs"
               />
               <span className="mt-4">NEXT js</span>
             </div>
@@ -118,19 +118,19 @@ const Stack = () => {
                 width={90}
                 height={100}
                 src="/expressjs.svg"
-                alt="expressjs"
+                alt="express"
               />
               <span className="mt-2">Express</span>
             </div>
 
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center pt-4">
               <Image
                 width={115}
                 height={115}
                 src="/tailwindcss.svg"
                 alt="tailwindcss"
               />
-              <span className="mt-2">Tailwind</span>
+              <span className="mt-5">Tailwind CSS</span>
             </div>
           </div>
         </div>
