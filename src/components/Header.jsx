@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react'
 
 const Header = () => {
@@ -22,10 +23,14 @@ const Header = () => {
             <span class="ml-3 text-xl">Tailblocks</span>
           </a>
           <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a class="mr-5 hover:text-gray-900">First Link</a>
-            <a class="mr-5 hover:text-gray-900">Second Link</a>
-            <a class="mr-5 hover:text-gray-900">Third Link</a>
-            <a class="mr-5 hover:text-gray-900">Fourth Link</a>
+            <Link href="#inicio" class="mr-5 hover:text-gray-900">Inicio</Link>
+            <Link href="#stack" class="mr-5 hover:text-gray-900">
+              Stack
+            </Link>
+            <Link href="#proyectos" class="mr-5 hover:text-gray-900">
+              Proyectos
+            </Link>
+            <Link href="#contacto" class="mr-5 hover:text-gray-900">Contacto</Link>
           </nav>
           <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
             Dark
