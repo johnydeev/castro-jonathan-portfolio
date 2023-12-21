@@ -1,64 +1,81 @@
+"use client"
 import Link from 'next/link';
-import React from 'react'
+import React, { useState } from 'react'
 
 const Navbar = () => {
-    return (
-      <nav className="bg-gray-800 text-white ">
-        <div className="container mx-auto flex justify-between items-center p-4">
-          <span className="text-xl font-bold">Castro Jonathan</span>
+  const [isOpen, setIsOpen] = useState(false);
+  const[theme,setTheme] = useState(false)
+  const changeTheme=()=>{
+    setTheme(!theme)
+  }  
 
-          <ul className="flex space-x-4">
-            <li>
-              <Link href="#inicio" className="hover:text-gray-300">
-                Inicio
-              </Link>
-            </li>
-            <li>
-              <Link href="#stack" className="hover:text-gray-300">
-                Stack
-              </Link>
-            </li>
-            <li>
-              <Link href="#proyectos" className="hover:text-gray-300">
-                Proyectos
-              </Link>
-            </li>
-            <li>
-              <Link href="#contacto" className="hover:text-gray-300">
-                Contacto
-              </Link>
-            </li>
-          </ul>
+
+  return (
+    <nav className="bg-gray-800 text-white ">
+      <div
+        id="desktop"
+        className="container mx-auto flex justify-between items-center p-4"
+      >
+        <span className="text-xl font-bold">Castro Jonathan</span>
+
+        <div
+          className={`link ${
+            isOpen ? "open" : "close"
+          } text-center flex space-x-4`}
+        >
+            <Link href="#inicio" className="hover:text-gray-300">
+              Inicio
+            </Link>
+            <Link href="#stack" className="hover:text-gray-300">
+              Stack
+            </Link>          
+            <Link href="#proyectos" className="hover:text-gray-300">
+              Proyectos
+            </Link>          
+            <Link href="#contacto" className="hover:text-gray-300">
+              Contacto
+            </Link>
         </div>
+        
+      </div>
 
-        <div className="container mx-auto flex justify-between items-center">
-          <span className="text-xl font-bold">Castro Jonathan</span>
+      <div
+        id="mobile"
+        className="container mx-auto flex justify-between items-center p-4"
+      >
+        <span className="text-xl font-bold">Castro Jonathan</span>
 
-          <ul className="flex space-x-4">
-            <li>
-              <Link href="#inicio" className="hover:text-gray-300">
-                Inicio
-              </Link>
-            </li>
-            <li>
-              <Link href="#stack" className="hover:text-gray-300">
-                Stack
-              </Link>
-            </li>
-            <li>
-              <Link href="#proyectos" className="hover:text-gray-300">
-                Proyectos
-              </Link>
-            </li>
-            <li>
-              <Link href="#contacto" className="hover:text-gray-300">
-                Contacto
-              </Link>
-            </li>
-          </ul>
+        <div
+          className={`hamburg ${isOpen && "open"}`}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </nav>
-    );
+      </div>
+
+      {/* <button
+        id="theme"
+        onClick={changeTheme}
+        className={`mr-4 text-lg rounded-full p-3 bg-gray-500 
+          ${theme ? "" : "!bg-white"}`}
+      >
+        <picture>
+          <img
+            width={30}
+            height={30}
+            src={
+              theme
+                ? "/moon-stars-svgrepo-com2.svg"
+                : "/sun-black.svg"
+            }
+            alt={theme ? "Dark" : "Light"}
+          />
+        </picture>
+      </button> */}
+    </nav>
+  );
 }
 
 export default Navbar

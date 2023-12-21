@@ -12,8 +12,7 @@ const Hero = () => {
                 <div class=" 2xl:px-36 container mx-auto flex sm:px-16 md:px-2 lg:px-20 md:flex-row flex-col items-center gap-4">
                     <div class=" 2xl:mr-52 lg:flex-grow md:w-2/3 lg:pr-10 md:pr-10 flex flex-col md:items-start md:text-left mb-6 md:mb-0 items-center text-center">
                         <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-600">
-                        Full Stack
-                        developer...
+                        Full Stack Developer...
                         <br class="hidden lg:inline-block" />
                         </h1>
                         <p class="mb-6 leading-relaxed">

@@ -2,4 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+#mobile{
+    display: none;
+}
 
+@media (max-width: 1024px) {
+    #desktop{
+        display: none;
+    }
+    #mobile{
+        display: flex;
+    }
+
+    .hamburg span {
+    display: flex;
+    width: 30px;
+    height: 4px;
+    background: white;
+    margin: 5px;
+    border-radius: 2px;
+    transform-origin: 5px 0px;
+    transition: all 0.2s linear;
+    }
+    .hamburg.open span:nth-child(1) {
+        transform: rotate(45deg) translate(0px, 0px);
+    }
+    .hamburg.open span:nth-child(2){
+        display: none;
+    }
+    .hamburg.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(-6px,1px);
+    }
+    
+}
