@@ -22,7 +22,7 @@ const Stack = () => {
                 <Image width={100} height={100} src="/css.svg" alt="CSS" />
                 <span className="mt-2">CSS3</span>
               </div>
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center w-[55px] h-15 sm:w-40 w-30">
                 <Image
                   width={110}
                   height={115}
@@ -34,9 +34,7 @@ const Stack = () => {
               <div className="flex flex-col items-center">
                 <Image
                   width={120}
-                  height={100}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  height={100}                  
                   src="/react.svg"
                   alt="react"
                 />

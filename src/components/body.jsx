@@ -4,12 +4,11 @@ import Image from 'next/image';
 import Contact from './Contact';
 import Proyects from './Proyects';
 import Hero from './Hero';
-import Perfil from './Perfil';
+
 
 const Body = () => {
     return (
-      <div className="bg-gray-100 text-gray-900 font-sans mx-auto w-4/5">
-        {/* <Perfil/>         */}
+      <div className="bg-gray-100 text-gray-900 font-sans mx-auto w-4/5">        
         <Hero />
         <Stack />
         <Proyects />

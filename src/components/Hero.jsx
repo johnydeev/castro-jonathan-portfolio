@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React from 'react'
 
 const Hero = () => {
@@ -8,7 +7,7 @@ const Hero = () => {
                 <h1 className="text-4xl font-bold sm:px-20 py-2">
                 ¡Hola! Mi nombre es Jonathan
                 </h1>
-                <h1 className="text-xl pb-8">Desarrollador Full Stack</h1>
+                <h1 className="text-xl pb-8">Bienvenid@ a mi portfolio</h1>
 
                 <div class=" 2xl:px-36 container mx-auto flex sm:px-16 md:px-2 lg:px-20 md:flex-row flex-col items-center gap-4">
                     <div class=" 2xl:mr-52 lg:flex-grow md:w-2/3 lg:pr-10 md:pr-10 flex flex-col md:items-start md:text-left mb-6 md:mb-0 items-center text-center">

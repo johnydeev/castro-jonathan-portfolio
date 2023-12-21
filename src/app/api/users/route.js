@@ -16,7 +16,7 @@ export async function POST(request){
     try {
         const data = await request.json()
         console.log("data>>>",data)
-        const newUser = new users(data)        
+        const newUser = new users(data)
         console.log("newContact>>>",newUser)
         const saveUser = await newUser.save()
         console.log("Agregando nuevo contacto...")
