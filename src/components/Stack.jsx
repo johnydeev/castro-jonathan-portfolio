@@ -5,14 +5,14 @@ const Stack = () => {
   return (
     <>
       <div id="stack">
-        <h2 className="text-3xl font-bold m-2 p-2 text-center">
+        <h2 className="text-3xl font-bold m-2 px-5 pt-8 text-center ">
           Stack Tecnológico
         </h2>
-        <section className="py-4 bg-gray-200">
+        <section className="p-4 bg-gray-200 text-center">
           <div className="container mx-auto">
             <span className="block w-full h-px bg-gray-600 my-8"></span>
             <h2 className="text-2xl font-bold mb-8 text-center">Frontend</h2>
-            <div className="flex flex-wrap:wrap justify-evenly items-center min-w-full gap-4">
+            <div className="flex justify-evenly items-center min-w-full gap-4">
               <div className="flex flex-col items-center">
                 <Image width={100} height={100} src="/html5.svg" alt="html5" />
                 <span className="mt-2">HTML5</span>
@@ -44,11 +44,11 @@ const Stack = () => {
               </div>
             </div>
 
-            <div className="flex">
-              <section className="w-1/2">
+            <div className="flex flex-wrap justify-center text-center mx-auto">
+              <section className="w-full sm:w-1/2 flex flex-col">
                 <span className="block w-full h-px bg-gray-600 my-8"></span>
                 <h2 className="text-2xl font-bold mb-8 text-center">Backend</h2>
-                <div className="flex flex-wrap:wrap justify-evenly items-center min-w-full gap-4">
+                <div className="flex flex-wrap:wrap justify-evenly min-w-full gap-4">
                   <div className="flex flex-col items-center">
                     <Image
                       width={100}
@@ -69,17 +69,17 @@ const Stack = () => {
                       src="/spring-svgrepo-com.svg"
                       alt="java"
                     />
-                    <span className="mt-2">Spring</span>
+                    <span className="mt-3">Spring</span>
                   </div>
                 </div>
               </section>
 
-              <section className="w-1/2">
+              <section className="w-full sm:w-1/2 flex flex-col">
                 <span className="block w-full h-px bg-gray-600 my-8"></span>
                 <h2 className="text-2xl font-bold mb-8 text-center">
                   Databases
                 </h2>
-                <div className="flex flex-wrap:wrap justify-evenly items-center min-w-full gap-4">
+                <div className="flex justify-evenly items-center min-w-full gap-4">
                   <div className="flex flex-col items-center">
                     <Image
                       width={53}
