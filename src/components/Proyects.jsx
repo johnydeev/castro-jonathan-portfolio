@@ -49,8 +49,7 @@ const Proyects = () => {
                   Dentistas
                 </h2>
                 <p class="leading-relaxed text-base">
-                  Williamsburg occupy sustainable snackwave gochujang. Pinterest
-                  cornhole brunch, slow-carb neutra irony.
+                  10 Cards de dentistas que se renderizan con la informacion obtenida de una API publica.
                 </p>
                 <div class="flex justify-center">
                   <picture className="w-20 p-2">
