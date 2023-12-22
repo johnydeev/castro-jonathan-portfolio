@@ -1,6 +1,5 @@
 import React from 'react'
 import Stack from './Stack';
-import Image from 'next/image';
 import Contact from './Contact';
 import Proyects from './Proyects';
 import Hero from './Hero';
