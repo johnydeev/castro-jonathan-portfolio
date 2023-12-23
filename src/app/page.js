@@ -1,5 +1,5 @@
 "use client"
-import Body from '@/components/Body';
+import Body from '';
 import React from 'react';
 
 const Home = () => {
