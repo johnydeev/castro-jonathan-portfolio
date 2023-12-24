@@ -9,13 +9,15 @@ const Proyects = () => {
             <div className="flex flex-wrap -mx-4 -mb-10 text-center">
               <div className="sm:w-1/2 mb-10 px-4">
                 <div className="border-2">
-                  <Image
-                    width={900}
-                    height={100}
-                    alt="Project INFINIT-Ecommerce image"
-                    className="object-cover object-center "
-                    src="/infinit.png"
-                  />
+                  <picture>
+                    <img
+                      width={900}
+                      height={100}
+                      alt="Project INFINIT-Ecommerce image"
+                      className="object-cover object-center "
+                      src="/infinit.png"
+                    />
+                  </picture>
                 </div>
                 <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
                   INFINIT
@@ -37,13 +39,15 @@ const Proyects = () => {
               </div>
               <div className="sm:w-1/2 mb-10 px-4">
                 <div className="border-2">
-                  <Image
-                    width={990}
-                    height={100}
-                    alt="Project Dentist Card image"
-                    className="object-cover object-center min-h-fit"
-                    src="/dentist2.png"
-                  />
+                  <picture>
+                    <img
+                      width={990}
+                      height={100}
+                      alt="Project Dentist Card image"
+                      className="object-cover object-center min-h-fit"
+                      src="/dentist2.png"
+                    />
+                  </picture>
                 </div>
                 <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
                   Dentistas
