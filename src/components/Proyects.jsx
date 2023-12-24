@@ -8,13 +8,13 @@ const Proyects = () => {
           <div className="container px-5 pt-24 mx-auto">
             <div className="flex flex-wrap -mx-4 -mb-10 text-center">
               <div className="sm:w-1/2 mb-10 px-4">
-                <div className="rounded-lg overflow-hidden">
+                <div className="border-2">
                   <Image
-                    width={100}
+                    width={900}
                     height={100}
-                    alt="content"
-                    className="object-cover object-center h-full w-full"
-                    src="/infinit2.png"
+                    alt="Project INFINIT-Ecommerce image"
+                    className="object-cover object-center "
+                    src="/infinit.png"
                   />
                 </div>
                 <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
@@ -36,12 +36,12 @@ const Proyects = () => {
                 </div>
               </div>
               <div className="sm:w-1/2 mb-10 px-4">
-                <div className="rounded-lg overflow-hidden">
+                <div className="border-2">
                   <Image
-                    width={100}
+                    width={990}
                     height={100}
-                    alt="content"
-                    className="object-cover object-center h-full w-full"
+                    alt="Project Dentist Card image"
+                    className="object-cover object-center min-h-fit"
                     src="/dentist2.png"
                   />
                 </div>
