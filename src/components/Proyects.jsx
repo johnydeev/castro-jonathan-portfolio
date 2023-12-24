@@ -14,7 +14,7 @@ const Proyects = () => {
                     height={100}
                     alt="content"
                     className="object-cover object-center h-full w-full"
-                    src="/infinit.png"
+                    src="/infinit2.png"
                   />
                 </div>
                 <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
@@ -42,7 +42,7 @@ const Proyects = () => {
                     height={100}
                     alt="content"
                     className="object-cover object-center h-full w-full"
-                    src="/dentistCard.png"
+                    src="/dentist2.png"
                   />
                 </div>
                 <h2 className="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">
