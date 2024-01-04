@@ -23,8 +23,7 @@ const Proyects = () => {
                   INFINIT
                 </h2>
                 <p className="leading-relaxed text-base">
-                  Ecommerce con el proposito de ofrecer un servicio de renta
-                  online de un automovil segun las necesidades y ubicacion del
+                  Se trata de un booking de autos online donde se puede alquilar un automovil segun las necesidades y ubicacion del
                   usuario
                 </p>
                 <div className="flex justify-center">
