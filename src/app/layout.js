@@ -10,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className='min-h-min'>
+      <body className='mx-auto min-h-min'>
         <Navbar/>
         {children}
         <Footer/>    
