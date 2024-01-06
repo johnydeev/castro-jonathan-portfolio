@@ -52,7 +52,7 @@ const Proyects = () => {
                   Dentistas
                 </h2>
                 <p className="leading-relaxed text-base">
-                  10 Cards de dentistas que se renderizan con la informacion obtenida de una API publica.
+                    App que consume una API con la informacion de 10 dentistas los cuales se renderizan en Cards con un estilo personalizado
                 </p>
                 <div className="flex justify-center">
                   <picture className="w-20 p-2">
