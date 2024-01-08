@@ -4,9 +4,7 @@
 
 #mobile{
     display: none;
-    
 }
-
 
 @media (max-width: 1024px) {
     #desktop{
@@ -19,7 +17,7 @@
     .hamburg span {
     display: flex;
     width: 30px;
-    height: 5px;
+    height: 4px;
     background: white;
     margin: 5px;
     border-radius: 2px;
