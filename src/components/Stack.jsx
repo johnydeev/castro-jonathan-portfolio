@@ -32,12 +32,7 @@ const Stack = () => {
                 <span className="mt-2">JavaScript</span>
               </div>
               <div className="flex flex-col items-center">
-                <Image
-                  width={120}
-                  height={100}                  
-                  src="/react.svg"
-                  alt="react"
-                />
+                <Image width={120} height={100} src="/react.svg" alt="react" />
                 <span className="mt-2">Reactjs</span>
               </div>
             </div>
@@ -135,6 +130,7 @@ const Stack = () => {
               </div>
             </div>
           </div>
+          <span className="block w-full h-px bg-gray-600 my-8"></span>
         </section>
       </div>
     </>
