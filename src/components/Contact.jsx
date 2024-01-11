@@ -19,7 +19,7 @@ const Contact = () => {
                         htmlFor="name"
                         className="leading-7 text-sm text-gray-600"
                       >
-                        Name
+                        Nombre
                       </label>
                       <input
                         type="text"
@@ -51,7 +51,7 @@ const Contact = () => {
                         htmlFor="message"
                         className="leading-7 text-sm text-gray-600"
                       >
-                        Message
+                        Mensaje
                       </label>
                       <textarea
                         id="message"
@@ -62,7 +62,7 @@ const Contact = () => {
                   </div>
                   <div className="p-2 w-full">
                     <button className="flex mx-auto text-white bg-gray-800 border-0 py-2 px-8 focus:outline-none hover:bg-gray-700 rounded text-lg">
-                      Button
+                      Enviar
                     </button>
                   </div>
                   <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
