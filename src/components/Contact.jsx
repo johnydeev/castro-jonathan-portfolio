@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
     return (
       <>
-        <div id='contacto'>
+        <div id="contacto">
           <section className="text-gray-600 body-font relative">
             <div className="container px-5 py-24 mx-auto">
               <div className="flex flex-col text-center w-full mb-12">
@@ -16,7 +16,7 @@ const Contact = () => {
                   <div className="p-2 w-1/2">
                     <div className="relative">
                       <label
-                        for="name"
+                        htmlFor="name"
                         className="leading-7 text-sm text-gray-600"
                       >
                         Name
@@ -32,7 +32,7 @@ const Contact = () => {
                   <div className="p-2 w-1/2">
                     <div className="relative">
                       <label
-                        for="email"
+                        htmlFor="email"
                         className="leading-7 text-sm text-gray-600"
                       >
                         Email
@@ -48,7 +48,7 @@ const Contact = () => {
                   <div className="p-2 w-full">
                     <div className="relative">
                       <label
-                        for="message"
+                        htmlFor="message"
                         className="leading-7 text-sm text-gray-600"
                       >
                         Message
@@ -65,14 +65,14 @@ const Contact = () => {
                       Button
                     </button>
                   </div>
-                  <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">                   
+                  <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
                     <span className="inline-flex">
                       <a className="text-gray-500">
                         <svg
                           fill="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           className="w-5 h-5"
                           viewBox="0 0 24 24"
                         >
@@ -82,9 +82,9 @@ const Contact = () => {
                       <a className="ml-4 text-gray-500">
                         <svg
                           fill="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           className="w-5 h-5"
                           viewBox="0 0 24 24"
                         >
@@ -95,9 +95,9 @@ const Contact = () => {
                         <svg
                           fill="none"
                           stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           className="w-5 h-5"
                           viewBox="0 0 24 24"
                         >
@@ -115,9 +115,9 @@ const Contact = () => {
                       <a className="ml-4 text-gray-500">
                         <svg
                           fill="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           className="w-5 h-5"
                           viewBox="0 0 24 24"
                         >
