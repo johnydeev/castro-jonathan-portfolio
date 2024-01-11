@@ -11,8 +11,8 @@ const Proyects = () => {
                 <div className="border-2">
                   <picture>
                     <img
-                      width={900}
-                      height={100}
+                      width="auto"
+                      height="auto"
                       alt="Project INFINIT-Ecommerce image"
                       className="object-cover object-center "
                       src="/infinit.png"
@@ -23,8 +23,8 @@ const Proyects = () => {
                   INFINIT
                 </h2>
                 <p className="leading-relaxed text-base">
-                  Se trata de un booking de autos online donde se puede alquilar un automovil segun las necesidades y ubicacion del
-                  usuario
+                  Se trata de un booking de autos online donde se puede alquilar
+                  un automovil segun las necesidades y ubicacion del usuario
                 </p>
                 <div className="flex justify-center">
                   <picture className="w-20 p-2">
@@ -40,8 +40,8 @@ const Proyects = () => {
                 <div className="border-2">
                   <picture>
                     <img
-                      width={990}
-                      height={100}
+                      width="auto"
+                      height="auto"
                       alt="Project Dentist Card image"
                       className="object-cover object-center min-h-fit"
                       src="/dentist2.png"
@@ -52,7 +52,8 @@ const Proyects = () => {
                   Dentistas
                 </h2>
                 <p className="leading-relaxed text-base">
-                    App que consume una API con la informacion de 10 dentistas los cuales se renderizan en Cards con un estilo personalizado
+                  App que consume una API con la informacion de 10 dentistas los
+                  cuales se renderizan en Cards con un estilo personalizado
                 </p>
                 <div className="flex justify-center">
                   <picture className="w-20 p-2">
