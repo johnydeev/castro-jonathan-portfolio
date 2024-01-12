@@ -22,7 +22,7 @@ export async function POST(request){
         const saveUser = await newUser.save()
         console.log("Agregando nuevo contacto...")
         console.log(saveUser)
-        return NextResponse.json(saveUser)        
+        return NextResponse.json(saveUser) 
         
     } catch (error) {
         return NextResponse.error(error.message, {status: 400})     

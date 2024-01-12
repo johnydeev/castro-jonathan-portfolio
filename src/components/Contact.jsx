@@ -1,6 +1,37 @@
-import React from 'react'
+
+import axios from 'axios'
+import React, { useState } from 'react'
+
 
 const Contact = () => {
+    
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  })
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    })
+  }
+
+  const handleSubmit = async () => {
+
+    // const {name, email , message} = formData
+    console.log("formData>>",formData)
+    try{
+      const response = await axios.post('/api/users', formData)
+      console.log("FormData-response>>", response)
+
+
+    }catch(error){
+      console.log("Error>>",error)      
+    }   
+  }
+
     return (
       <>
         <div id="contacto">
@@ -8,7 +39,7 @@ const Contact = () => {
             <div className="container px-5 py-24 mx-auto">
               <div className="flex flex-col text-center w-full mb-12">
                 <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-                  Contact Me
+                  Contáctame!
                 </h1>
               </div>
               <div className="lg:w-1/2 md:w-2/3 mx-auto">
@@ -22,6 +53,7 @@ const Contact = () => {
                         Nombre
                       </label>
                       <input
+                        onChange={handleChange}
                         type="text"
                         id="name"
                         name="name"
@@ -38,6 +70,7 @@ const Contact = () => {
                         Email
                       </label>
                       <input
+                        onChange={handleChange}
                         type="email"
                         id="email"
                         name="email"
@@ -54,6 +87,7 @@ const Contact = () => {
                         Mensaje
                       </label>
                       <textarea
+                        onChange={handleChange}
                         id="message"
                         name="message"
                         className="w-full rounded border border-gray-300 focus:border-blue-500 bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
@@ -61,7 +95,11 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="p-2 w-full">
-                    <button className="flex mx-auto text-white bg-gray-800 border-0 py-2 px-8 focus:outline-none hover:bg-gray-700 rounded text-lg">
+                    <button
+                      onClick={handleSubmit}
+                      type="submit"
+                      className="flex mx-auto text-white bg-gray-800 border-0 py-2 px-8 focus:outline-none hover:bg-gray-700 rounded text-lg"
+                    >
                       Enviar
                     </button>
                   </div>
@@ -134,5 +172,6 @@ const Contact = () => {
       </>
     );
 }
+
 
 export default Contact

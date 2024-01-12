@@ -13,8 +13,8 @@ const contactsSchema = new Schema({
         unique: true,      
         trim: true,
     },
-    message : {
-        type:String,       
+    message: {
+        type:String,
     }
     
 },  {
