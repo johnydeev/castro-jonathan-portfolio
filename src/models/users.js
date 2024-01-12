@@ -9,13 +9,16 @@ const contactsSchema = new Schema({
     },    
     email: {
         type: String,
-        required: true,
-        unique: true,
+        required: true,  
+        unique: true,      
         trim: true,
+    },
+    message : {
+        type:String,       
     }
     
 },  {
     timestamps: true,
 });
 
-export default models.contactsSchema || model('Contacts', contactsSchema);
+export default models.contactsSchema || model('contacts', contactsSchema);

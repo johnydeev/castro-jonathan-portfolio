@@ -14,6 +14,7 @@ export async function GET(){
 export async function POST(request){
 
     try {
+        console.log("Entrando al try...")
         const data = await request.json()
         console.log("data>>>",data)
         const newUser = new users(data)
@@ -24,6 +25,6 @@ export async function POST(request){
         return NextResponse.json(saveUser)        
         
     } catch (error) {
-        return NextResponse.error(error.message, {status: 400})        
+        return NextResponse.error(error.message, {status: 400})     
     }
 }
