@@ -20,17 +20,26 @@ const Contact = () => {
 
   const handleSubmit = async () => {
 
-    // const {name, email , message} = formData
     console.log("formData>>",formData)
     try{
+      
       const response = await axios.post('/api/users', formData)
       console.log("FormData-response>>", response)
-
+      
 
     }catch(error){
-      console.log("Error>>",error)      
-    }   
+      console.log("ErrorSubmit>>",error)      
+    }
   }
+
+  const handleSendEmails = async () => {
+    try {
+      const response = await axios.post("/api/sendmail", formData);
+      console.log("Respuesta del servidor:", response.data);
+    } catch (error) {
+      console.error("Hubo un error al enviar el mail:", error);
+    }
+  };
 
     return (
       <>
@@ -96,7 +105,7 @@ const Contact = () => {
                   </div>
                   <div className="p-2 w-full">
                     <button
-                      onClick={handleSubmit}
+                      onClick={handleSendEmails}
                       type="submit"
                       className="flex mx-auto text-white bg-gray-800 border-0 py-2 px-8 focus:outline-none hover:bg-gray-700 rounded text-lg"
                     >
