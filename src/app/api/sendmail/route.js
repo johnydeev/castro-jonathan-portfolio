@@ -1,9 +1,9 @@
 import { NextResponse } from 'next/server';
-import transporter from '@/utils/sendEmail'
+import { transporter } from '@/utils/sendEmail'
 // import { promises as fs } from 'fs';
 
 export async function POST(request){
-    const {name,email} = await request.json()  
+    const {name,email, message} = await request.json()  
     console.log("name>>>",name)
     console.log("email>>>",email)
     // console.log("message>>>",message)
@@ -17,18 +17,26 @@ export async function POST(request){
         if(!name || !email){
             return NextResponse.json({message:"Faltan datos"})
         }
+        console.log("Paso el IF")
         const response = await transporter.sendMail({
             from:"mensaje enviado por <>",
-            to:Gmail,
-            subject:"Johnnydeev",
-            text: `Hola ${name}, Agradezco enormemente por confiar en mi APP que hice con mucho esfuerzo y cariño, en breve estare en contacto para hablar acerca de tu propuesta. Gracias!`,
+            to:email,
+            subject:"Johnydeev",
+            text: `Hola ${name}! Espero que te encuentres bien, en primer lugar te agradezco enormemente por confiar en mi APP que hice con mucho esfuerzo y ❤, segundo.. en breve estare en contacto para charlar acerca de tu propuesta. Gracias!\n\nPD: Adjunto mi CV`,
             attachments:{                
-                // path: attachment,
                 path: "C:/Users/jony/Desktop/Repos/castro-jonathan-portfolio/public/CV Jonathan Castro - Desarrollador Full Stack.pdf", 
                 contentType: 'application/pdf',              
             },
         })
+        const avisoDeContacto = await transporter.sendMail({
+            from:`mensaje enviado por <${email}>`,
+            to:'castrojonathand@gmail.com',
+            subject: name,
+            text: message,
+            
+        })
         console.log("envio exitoso",response)
+        console.log("AvisoDeContacto>>", avisoDeContacto)
         return NextResponse.json('successful shipment')
         
     } catch (error) {
