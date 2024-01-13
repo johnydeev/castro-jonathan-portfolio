@@ -14,6 +14,7 @@ export async function POST(request){
     // console.log("response>>>",response)
     // await fs.unlink('./promesas.txt')
     try {
+
         if(!name || !email){
             return NextResponse.json({message:"Faltan datos"})
         }
@@ -29,9 +30,9 @@ export async function POST(request){
             },
         })
         const avisoDeContacto = await transporter.sendMail({
-            from:`mensaje enviado por <${email}>`,
+            from:`mensaje enviado por <>`,
             to:'castrojonathand@gmail.com',
-            subject: name,
+            subject: email,
             text: message,
             
         })

@@ -28,7 +28,7 @@ const Contact = () => {
       
 
     }catch(error){
-      console.log("ErrorSubmit>>",error)      
+      console.log("ErrorSubmit>>",error)
     }
   }
 
@@ -105,7 +105,7 @@ const Contact = () => {
                   </div>
                   <div className="p-2 w-full">
                     <button
-                      onClick={handleSendEmails}
+                      onClick={handleSubmit}
                       type="submit"
                       className="flex mx-auto text-white bg-gray-800 border-0 py-2 px-8 focus:outline-none hover:bg-gray-700 rounded text-lg"
                     >
