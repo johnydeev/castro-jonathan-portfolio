@@ -31,7 +31,10 @@ export async function POST(request){
         console.log(saveUser)
         return NextResponse.json(saveUser)
         
+        
+        
     } catch (error) {
         return NextResponse.error(error.message, {status: 400})     
     }
+    
 }
