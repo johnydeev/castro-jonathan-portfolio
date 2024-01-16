@@ -1,6 +1,7 @@
 
 import axios from 'axios'
 import React, { useState } from 'react'
+import Swal from 'sweetalert2'
 
 
 const Contact = () => {
@@ -24,9 +25,19 @@ const Contact = () => {
     try{
       
       const response = await axios.post('/api/users', formData)
-      console.log("FormData-response>>", response)
-      handleSendEmails()
+      console.log("FormData-response>>", response)     
+
+      await handleSendEmails()
       
+      if(response.status == "200"){
+
+        Swal.fire({
+          title: "Send succefull!",
+          text: "Do you want to continue",
+          icon: "success",
+          confirmButtonText: "OK",
+        });
+      }
 
     }catch(error){
       console.log("ErrorSubmit>>",error)

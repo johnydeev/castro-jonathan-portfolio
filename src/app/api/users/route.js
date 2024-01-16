@@ -1,13 +1,13 @@
 import {NextResponse} from 'next/server'
-import users from '@/models/users'
+import usersModel from '@/models/users'
 import {connectDB} from '@/utils/connectDB'
 
 connectDB()
 
-export async function GET(){      
+export async function GET(){
     console.log("Obteniendo todos los Contactos...")
-    const user = await users.find()
-    return NextResponse.json(user)
+    const allUsers = await usersModel.find()
+    return NextResponse.json(allUsers)
 }
 
 export async function POST(request){
@@ -16,25 +16,27 @@ export async function POST(request){
         console.log("Entro al try POST")
         const data = await request.json()
         console.log("data>>>",data)
+        const {email} = data
         
-        // const {email} = data
-        // console.log("email>>>",email)
-        // const existingUser = await users.findOne({ email });
-        // if (existingUser) {
-        //     return NextResponse.error("El correo electrónico ya está registrado", { status: 400 });
-        // }
+        console.log("Linea25>>")
+        const existingUser = await usersModel.findOne({ email: email });
+        console.log("existingUser>>", existingUser)
 
-        const newUser = new users(data)
-        console.log("newContact>>>",newUser)
+        if (existingUser) {
+            console.log("Error en el IF existingUser>>>")
+            return NextResponse.error("Ya existe el email",{status:400})        
+        }
+
+        const newUser = new usersModel(data)
+        console.log("newContact>>>",newUser)  
+    
         const saveUser = await newUser.save()
         console.log("Agregando nuevo contacto...")
         console.log(saveUser)
         return NextResponse.json(saveUser)
         
-        
-        
     } catch (error) {
-        return NextResponse.error(error.message, {status: 400})     
-    }
-    
+        console.error("Error en la función POST:", error);
+        return NextResponse.error("Error interno del servidor", { status: 500 }); 
+    }    
 }
