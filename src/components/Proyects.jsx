@@ -53,7 +53,7 @@ const Proyects = () => {
                 </h2>
                 <p className="leading-relaxed text-base">
                   App que consume una API con la informacion de 10 dentistas los
-                  cuales se renderizan en Cards con un estilo personalizado
+                  cuales se renderizan en Cards con un estilo personalizado y adaptativo
                 </p>
                 <div className="flex justify-center">
                   <picture className="w-20 p-2">

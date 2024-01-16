@@ -3,7 +3,6 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import Swal from 'sweetalert2'
 
-
 const Contact = () => {
     
   const [formData, setFormData] = useState({
@@ -28,7 +27,7 @@ const Contact = () => {
       console.log("FormData-response>>", response)     
 
       await handleSendEmails()
-      
+
       if(response.status == "200"){
 
         Swal.fire({
@@ -41,6 +40,15 @@ const Contact = () => {
 
     }catch(error){
       console.log("ErrorSubmit>>",error)
+      if(error.code === "ERR_BAD_RESPONSE" ){
+        
+        Swal.fire({
+          title: `Error! \n${error.message}`,
+          text: "Do you want to continue",
+          icon: "error",
+          confirmButtonText: "OK",
+        });
+      }
     }
   }
 

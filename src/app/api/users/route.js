@@ -24,7 +24,7 @@ export async function POST(request){
 
         if (existingUser) {
             console.log("Error en el IF existingUser>>>")
-            return NextResponse.error("Ya existe el email",{status:400})        
+            return NextResponse.error("Ya existe el email",{status: 400})
         }
 
         const newUser = new usersModel(data)
