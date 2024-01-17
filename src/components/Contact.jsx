@@ -23,8 +23,8 @@ const Contact = () => {
     console.log("formData>>",formData)
     try{
       
-      const response = await axios.post('/api/users', formData)
-      console.log("FormData-response>>", response)     
+      const response = await axios.post('https://api/users', formData)
+      console.log("FormData-response>>", response)
 
       await handleSendEmails()
 
